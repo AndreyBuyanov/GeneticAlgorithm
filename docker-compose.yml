@@ -1,0 +1,3 @@
+services:
+  genetic-algorithm:
+    build: https://github.com/AndreyBuyanov/GeneticAlgorithm.git
