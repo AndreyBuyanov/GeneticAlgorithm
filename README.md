@@ -14,5 +14,5 @@ cmake -S . -B build && cmake --build build --config RelWithDebInfo
 ---------------
 ```bash
 docker build -t intelligent-systems/genetic-algorithm .
-docker run -it intelligent-systems/genetic-algorithm
+docker run intelligent-systems/genetic-algorithm
 ```
