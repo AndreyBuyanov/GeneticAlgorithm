@@ -97,7 +97,7 @@ public:
             // Проходим по всей текущей популяции
             for (std::size_t j = 0; j < m_population.GetSize(); j += 2) {
                 // Скрещиваем двух соседних родителей (среди выбранных) и получаем двух детей
-                auto& [child1, child2] = m_crossover(parents[j], parents[j + 1], engine);
+                auto [child1, child2] = m_crossover(parents[j], parents[j + 1], engine);
                 // Заменяем родителей детьми
                 m_population[j] = child1;
                 m_population[j + 1] = child2;

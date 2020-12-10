@@ -119,7 +119,7 @@ public:
     }
 private:
     // Распределение для генерации точки скрещивания
-    std::uniform_int_distribution<std::size_t> m_distribution;
+    mutable std::uniform_int_distribution<std::size_t> m_distribution;
 };
 
 /**

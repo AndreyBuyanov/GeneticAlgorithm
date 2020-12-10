@@ -77,9 +77,9 @@ public:
     }
 private:
     // Распределение для выбора номера бита
-    std::uniform_int_distribution<std::size_t> m_bitDistribution;
+    mutable std::uniform_int_distribution<std::size_t> m_bitDistribution;
     // Распределение для генерации коэффициента мутации
-    std::uniform_real_distribution<double> m_mutationDistribution;
+    mutable std::uniform_real_distribution<double> m_mutationDistribution;
     // Коэффициент мутации
     double m_mutation;
 };
@@ -144,7 +144,7 @@ public:
     }
 private:
     // Распределение для генерации коэффициента мутации
-    std::uniform_real_distribution<double> m_mutationDistribution;
+    mutable std::uniform_real_distribution<double> m_mutationDistribution;
     // Коэффициент мутации
     double m_mutation;
     // Стандартное отклонение

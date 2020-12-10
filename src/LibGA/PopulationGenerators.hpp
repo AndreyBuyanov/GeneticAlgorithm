@@ -51,7 +51,7 @@ public:
 private:
     value_type m_minValue;
     value_type m_maxValue;
-    std::uniform_real_distribution<value_type> m_distribution;
+    mutable std::uniform_real_distribution<value_type> m_distribution;
 };
 
 }
